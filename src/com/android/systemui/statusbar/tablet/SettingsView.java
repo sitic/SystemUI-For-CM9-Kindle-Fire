@@ -33,10 +33,12 @@ import com.android.systemui.statusbar.policy.AutoRotateController;
 import com.android.systemui.statusbar.policy.BrightnessController;
 import com.android.systemui.statusbar.policy.ToggleSlider;
 import com.android.systemui.statusbar.policy.VolumeController;
+import com.android.systemui.statusbar.policy.WifiController;
 
 public class SettingsView extends LinearLayout implements View.OnClickListener {
     static final String TAG = "SettingsView";
 
+    WifiController mWifi;
     AutoRotateController mRotate;
     BrightnessController mBrightness;
     VolumeController mVolume;
@@ -56,6 +58,8 @@ public class SettingsView extends LinearLayout implements View.OnClickListener {
         final Context context = getContext();
 
 	findViewById(R.id.network).setOnClickListener(this);
+	mWifi = new WifiController(context,
+				(CompoundButton)findViewById(R.id.wifi_checkbox));
         mRotate = new AutoRotateController(context,
                 (CompoundButton)findViewById(R.id.rotate_checkbox));
         mBrightness = new BrightnessController(context,
