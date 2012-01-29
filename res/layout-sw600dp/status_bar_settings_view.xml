@@ -74,6 +74,7 @@
     <View style="@style/StatusBarPanelSettingsPanelSeparator" />
 
     <!-- Notifications / Do not disturb -->
+    <!-- Take them out for now, don't work
     <LinearLayout
             android:id="@+id/do_not_disturb"
             style="@style/StatusBarPanelSettingsRow"
@@ -96,6 +97,7 @@
 	    />
     </LinearLayout>
     <View style="@style/StatusBarPanelSettingsPanelSeparator" />
+    -->
 
 
     <!-- Brightness -->
