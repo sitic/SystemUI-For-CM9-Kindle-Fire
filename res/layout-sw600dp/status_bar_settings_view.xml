@@ -73,24 +73,6 @@
     </LinearLayout>
     <View style="@style/StatusBarPanelSettingsPanelSeparator" />
 
-    <!-- Brightness -->
-    <LinearLayout style="@style/StatusBarPanelSettingsRow" >
-        <ImageView
-                android:id="@+id/brightness_icon"
-                style="@style/StatusBarPanelSettingsIcon"
-                android:src="@drawable/ic_sysbar_brightness"
-                />
-        <com.android.systemui.statusbar.policy.ToggleSlider
-                android:id="@+id/brightness"
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:layout_marginRight="2dp"
-                systemui:text="@string/status_bar_settings_auto_brightness_label"
-                />
-    </LinearLayout>
-    <View style="@style/StatusBarPanelSettingsPanelSeparator" />
-
     <!-- Notifications / Do not disturb -->
     <LinearLayout
             android:id="@+id/do_not_disturb"
@@ -112,6 +94,25 @@
             android:layout_gravity="center_vertical"
             android:layout_marginRight="5dp"
 	    />
+    </LinearLayout>
+    <View style="@style/StatusBarPanelSettingsPanelSeparator" />
+
+
+    <!-- Brightness -->
+    <LinearLayout style="@style/StatusBarPanelSettingsRow" >
+        <ImageView
+                android:id="@+id/brightness_icon"
+                style="@style/StatusBarPanelSettingsIcon"
+                android:src="@drawable/ic_sysbar_brightness"
+                />
+        <com.android.systemui.statusbar.policy.ToggleSlider
+                android:id="@+id/brightness"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                systemui:text="@string/status_bar_settings_auto_brightness_label"
+                />
     </LinearLayout>
     <View style="@style/StatusBarPanelSettingsPanelSeparator" />
 
